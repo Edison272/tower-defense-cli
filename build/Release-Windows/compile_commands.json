@@ -1,0 +1,74 @@
+[
+{
+  "directory": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/build/Release-Windows",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/tower-defense-cli.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\tower-defense-cli.dir\\src\\bullet.cpp.obj -c C:\\Users\\ediso\\Downloads\\take-home-test-1.1\\tower-defense-cli\\src\\bullet.cpp",
+  "file": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/src/bullet.cpp",
+  "output": "CMakeFiles/tower-defense-cli.dir/src/bullet.cpp.obj"
+},
+{
+  "directory": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/build/Release-Windows",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/tower-defense-cli.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\tower-defense-cli.dir\\src\\enemy.cpp.obj -c C:\\Users\\ediso\\Downloads\\take-home-test-1.1\\tower-defense-cli\\src\\enemy.cpp",
+  "file": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/src/enemy.cpp",
+  "output": "CMakeFiles/tower-defense-cli.dir/src/enemy.cpp.obj"
+},
+{
+  "directory": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/build/Release-Windows",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/tower-defense-cli.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\tower-defense-cli.dir\\src\\explosion.cpp.obj -c C:\\Users\\ediso\\Downloads\\take-home-test-1.1\\tower-defense-cli\\src\\explosion.cpp",
+  "file": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/src/explosion.cpp",
+  "output": "CMakeFiles/tower-defense-cli.dir/src/explosion.cpp.obj"
+},
+{
+  "directory": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/build/Release-Windows",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/tower-defense-cli.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\tower-defense-cli.dir\\src\\game.cpp.obj -c C:\\Users\\ediso\\Downloads\\take-home-test-1.1\\tower-defense-cli\\src\\game.cpp",
+  "file": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/src/game.cpp",
+  "output": "CMakeFiles/tower-defense-cli.dir/src/game.cpp.obj"
+},
+{
+  "directory": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/build/Release-Windows",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/tower-defense-cli.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\tower-defense-cli.dir\\src\\grid.cpp.obj -c C:\\Users\\ediso\\Downloads\\take-home-test-1.1\\tower-defense-cli\\src\\grid.cpp",
+  "file": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/src/grid.cpp",
+  "output": "CMakeFiles/tower-defense-cli.dir/src/grid.cpp.obj"
+},
+{
+  "directory": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/build/Release-Windows",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/tower-defense-cli.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\tower-defense-cli.dir\\src\\grid_cell.cpp.obj -c C:\\Users\\ediso\\Downloads\\take-home-test-1.1\\tower-defense-cli\\src\\grid_cell.cpp",
+  "file": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/src/grid_cell.cpp",
+  "output": "CMakeFiles/tower-defense-cli.dir/src/grid_cell.cpp.obj"
+},
+{
+  "directory": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/build/Release-Windows",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/tower-defense-cli.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\tower-defense-cli.dir\\src\\logger.cpp.obj -c C:\\Users\\ediso\\Downloads\\take-home-test-1.1\\tower-defense-cli\\src\\logger.cpp",
+  "file": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/src/logger.cpp",
+  "output": "CMakeFiles/tower-defense-cli.dir/src/logger.cpp.obj"
+},
+{
+  "directory": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/build/Release-Windows",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/tower-defense-cli.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\tower-defense-cli.dir\\src\\pooler.cpp.obj -c C:\\Users\\ediso\\Downloads\\take-home-test-1.1\\tower-defense-cli\\src\\pooler.cpp",
+  "file": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/src/pooler.cpp",
+  "output": "CMakeFiles/tower-defense-cli.dir/src/pooler.cpp.obj"
+},
+{
+  "directory": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/build/Release-Windows",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/tower-defense-cli.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\tower-defense-cli.dir\\src\\screen.cpp.obj -c C:\\Users\\ediso\\Downloads\\take-home-test-1.1\\tower-defense-cli\\src\\screen.cpp",
+  "file": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/src/screen.cpp",
+  "output": "CMakeFiles/tower-defense-cli.dir/src/screen.cpp.obj"
+},
+{
+  "directory": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/build/Release-Windows",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/tower-defense-cli.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\tower-defense-cli.dir\\src\\texture.cpp.obj -c C:\\Users\\ediso\\Downloads\\take-home-test-1.1\\tower-defense-cli\\src\\texture.cpp",
+  "file": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/src/texture.cpp",
+  "output": "CMakeFiles/tower-defense-cli.dir/src/texture.cpp.obj"
+},
+{
+  "directory": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/build/Release-Windows",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/tower-defense-cli.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\tower-defense-cli.dir\\src\\tower-defense-cli.cpp.obj -c C:\\Users\\ediso\\Downloads\\take-home-test-1.1\\tower-defense-cli\\src\\tower-defense-cli.cpp",
+  "file": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/src/tower-defense-cli.cpp",
+  "output": "CMakeFiles/tower-defense-cli.dir/src/tower-defense-cli.cpp.obj"
+},
+{
+  "directory": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/build/Release-Windows",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/tower-defense-cli.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\tower-defense-cli.dir\\src\\tower.cpp.obj -c C:\\Users\\ediso\\Downloads\\take-home-test-1.1\\tower-defense-cli\\src\\tower.cpp",
+  "file": "C:/Users/ediso/Downloads/take-home-test-1.1/tower-defense-cli/src/tower.cpp",
+  "output": "CMakeFiles/tower-defense-cli.dir/src/tower.cpp.obj"
+}
+]
