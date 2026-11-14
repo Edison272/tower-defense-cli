@@ -32,6 +32,9 @@ Check below for details on how to build and run the game.
     ```sh
     cmake --preset Release-[version]
     cmake --build build/Release-[version] --config Release-[version]
+
+    cmake --preset Release-Windows
+    cmake --build build/Release-Windows --config Release-Windows
     ```
 
    Replace [version] for the preset adequate for your operating system (Windows, macOS, Ubuntu). Adjust the command according to your file structure and platform.
@@ -42,6 +45,8 @@ To run the game, execute the compiled binary:
 
 ```sh
 build/Release-[version]/tower-defense-cli.exe
+
+build/Release-Windows/tower-defense-cli.exe
 ```
 
 #### Controls

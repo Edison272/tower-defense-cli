@@ -24,6 +24,14 @@ Logger::~Logger() {
     }
 
 }
+void Logger::Log(std::string message) {
+    
+}
+
+void Logger::Flush()
+{
+
+}
 
 void Logger::ProcessLogs() {
     while (true) {

@@ -60,3 +60,10 @@ void Tower::FireBulletAtEnemy(Enemy& enemy, std::vector<Bullet>& bullets) {
 
     bullets.emplace_back(position, direction);
 }
+
+float Tower::CalculateDistance(Vector2D pos1, Vector2D pos2) {
+    return 0;
+}
+Enemy* Tower::FindClosestEnemy(const std::vector<Enemy*>& enemies) {
+    return NULL;
+}

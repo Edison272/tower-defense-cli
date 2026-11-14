@@ -18,6 +18,8 @@ class Logger {
     static Logger& GetInstance();
 
     ~Logger();
+    void Log(std::string message);
+    void Flush();
 
    private:
     Logger();

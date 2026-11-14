@@ -38,6 +38,9 @@ class Tower {
     void FireAtEnemy(const std::vector<Enemy*>& enemies,
                      std::vector<Bullet>& bullets);
     void FireBulletAtEnemy(Enemy& enemy, std::vector<Bullet>& bullets);
+
+    float CalculateDistance(Vector2D pos1, Vector2D pos2);
+    Enemy* FindClosestEnemy(const std::vector<Enemy*>& enemies);
 };
 
 #endif  // TOWER_H
