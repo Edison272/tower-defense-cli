@@ -161,6 +161,9 @@ CMakeFiles/tower-defense-cli.dir/src/game.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/list \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_list.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/list.tcc \
+ C:/msys64/ucrt64/include/c++/15.2.0/deque \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_deque.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/deque.tcc \
  C:\Users\ediso\Downloads\take-home-test-1.1\tower-defense-cli\src\enemy.h \
  C:\Users\ediso\Downloads\take-home-test-1.1\tower-defense-cli\src\tower.h \
  C:/msys64/ucrt64/include/c++/15.2.0/algorithm \

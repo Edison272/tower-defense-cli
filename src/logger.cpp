@@ -25,7 +25,15 @@ Logger::~Logger() {
 
 }
 void Logger::Log(std::string message) {
-    
+    if (logFile.is_open()) {
+        logFile << message;
+        logFile << "Writing another line to the file.\n";
+        
+        // Close the file when done
+        logFile.close();
+    } else {
+        std::cerr << "Error: Could not open the file.\n";
+    }
 }
 
 void Logger::Flush()
