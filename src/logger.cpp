@@ -12,6 +12,9 @@ Logger& Logger::GetInstance() {
 }
 
 Logger::Logger() : logFile("log.txt", std::ios_base::trunc) {
+    if (!logFile.is_open()) {
+        std::cout << "Error: Could not open log.txt.\n";   
+    }
     logThread = std::thread(&Logger::ProcessLogs, this);
 }
 
@@ -25,10 +28,6 @@ Logger::~Logger() {
 
 }
 void Logger::Log(std::string message) {
-    if (!logFile.is_open()) {
-        std::cout << "Error: Could not open log file.\n";   
-    }
-        
     logQueue.push(GetCurrentTimestamp() + " " + message);
 }
 
@@ -38,6 +37,7 @@ void Logger::Flush()
         logFile << logQueue.front() << std::endl;
         logQueue.pop();
     }
+    logFile.flush();
 }
 
 void Logger::ProcessLogs() {

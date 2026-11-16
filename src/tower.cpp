@@ -62,8 +62,22 @@ void Tower::FireBulletAtEnemy(Enemy& enemy, std::vector<Bullet>& bullets) {
 }
 
 float Tower::CalculateDistance(Vector2D pos1, Vector2D pos2) {
-    return 0;
+    int dx = pos1.x - pos2.x;
+    int dy = pos1.y - pos2.y;
+    return dx * dx + dy * dy;
 }
 Enemy* Tower::FindClosestEnemy(const std::vector<Enemy*>& enemies) {
-    return NULL;
+    Enemy* closest = nullptr;
+    int closestDistSq = 0;
+
+    for (Enemy* enemy : enemies) {
+        if (!enemy || !enemy->IsActive()) continue;
+
+        int distSq = CalculateDistance(position, enemy->GetPosition());
+        if (!closest || distSq < closestDistSq) {
+            closest = enemy;
+            closestDistSq = distSq;
+        }
+    }
+    return closest;  // nullptr if no active enemies
 }
