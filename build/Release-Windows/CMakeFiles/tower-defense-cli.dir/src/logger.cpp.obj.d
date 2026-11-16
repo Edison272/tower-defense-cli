@@ -161,6 +161,12 @@ CMakeFiles/tower-defense-cli.dir/src/logger.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/limits \
  C:/msys64/ucrt64/include/c++/15.2.0/ctime \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/parse_numbers.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/queue \
+ C:/msys64/ucrt64/include/c++/15.2.0/deque \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_deque.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/deque.tcc \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_queue.h \
  C:/msys64/ucrt64/include/c++/15.2.0/iomanip \
  C:/msys64/ucrt64/include/c++/15.2.0/locale \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets_nonio.h \

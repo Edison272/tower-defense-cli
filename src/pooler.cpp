@@ -5,17 +5,8 @@
 #include <algorithm>
 
 Pooler::Pooler(size_t minimumPoolSize) : minimumPoolSize(minimumPoolSize) {
-    // prewarm pool based on min pool size
-    for (size_t i = 0; i < minimumPoolSize; i++) {
-        Enemy* new_enemy = new Enemy();
-        enemy_storage.push_back(*new_enemy);
-        enemy_pool.push_back(new_enemy);
-    }
+    Reset();
 }
-Pooler::~Pooler() {
-    ClearPointers();
-}
-
 size_t Pooler::PoolSize() const
 {
     return enemy_pool.size();
@@ -23,24 +14,26 @@ size_t Pooler::PoolSize() const
 
 // clear the enemy pool
 void Pooler::Clear(){
-    ClearPointers();
-    
-    while(enemy_storage.size() > minimumPoolSize)
-    {
-        enemy_storage.pop_back();
-    }
-    for (Enemy enemy : enemy_storage) {
-        enemy_pool.push_back(&enemy);
-    }
+    Reset();
 }
 
-// deletes pointers to memory
-void Pooler::ClearPointers()
-{
-    for (Enemy* enemy : active_enemies)
-        delete enemy;
-    for (Enemy* enemy : enemy_pool)
-        delete enemy;
+// Resets pool back to base state. clears previous pool and reinitializes with new one 
+void Pooler::Reset() {
+    // clear pointers
+    active_enemies.clear();
+    enemy_pool.clear();
+
+    // remove extra instances or fill in new ones
+    while (enemy_storage.size() > minimumPoolSize)
+        enemy_storage.pop_back();
+    while (enemy_storage.size() < minimumPoolSize)
+        enemy_storage.emplace_back();
+
+    // add any newly created enemies to the pool
+    for (Enemy& e : enemy_storage) {
+        e.Deactivate();
+        enemy_pool.push_back(&e);
+    }
 }
 
 // spawns an enemy. Takes in x/y coordinates via a  
@@ -48,6 +41,7 @@ void Pooler::ClearPointers()
 Enemy* Pooler::SpawnEnemy(Vector2D position) {
     Enemy* new_enemy = CreateEnemy();
     new_enemy->Activate(position);
+    return new_enemy;
 }
 
 
@@ -72,7 +66,7 @@ const std::vector<Enemy*>& Pooler::GetActiveEnemies() const {
     return active_enemies;
 }
 
-// Creates an enemy, adds it to the pool
+// Creates an enemy, adds it to active_enemy
 Enemy* Pooler::CreateEnemy() {
     Enemy* new_enemy = nullptr;
 
@@ -81,8 +75,8 @@ Enemy* Pooler::CreateEnemy() {
         new_enemy = enemy_pool.back();
         enemy_pool.pop_back();
     } else {
-        new_enemy = new Enemy();
-        enemy_storage.push_back(*new_enemy);
+        enemy_storage.emplace_back();
+        new_enemy = &enemy_storage.back();
     }
 
     active_enemies.push_back(new_enemy);

@@ -184,4 +184,10 @@ CMakeFiles/tower-defense-cli.dir/src/tower.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/fstream.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/thread \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/std_thread.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/this_thread_sleep.h
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/this_thread_sleep.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/queue \
+ C:/msys64/ucrt64/include/c++/15.2.0/deque \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_deque.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/deque.tcc \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_queue.h

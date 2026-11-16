@@ -25,28 +25,24 @@ Logger::~Logger() {
 
 }
 void Logger::Log(std::string message) {
-    if (logFile.is_open()) {
-        logFile << message;
-        logFile << "Writing another line to the file.\n";
-        
-        // Close the file when done
-        logFile.close();
-    } else {
-        std::cerr << "Error: Could not open the file.\n";
+    if (!logFile.is_open()) {
+        std::cout << "Error: Could not open log file.\n";   
     }
+        
+    logQueue.push(GetCurrentTimestamp() + " " + message);
 }
 
 void Logger::Flush()
 {
-
+    while (!logQueue.empty()) {
+        logFile << logQueue.front() << std::endl;
+        logQueue.pop();
+    }
 }
 
 void Logger::ProcessLogs() {
     while (true) {
-        while (!logQueue.empty()) {
-            logFile << logQueue.back() << std::endl;
-            logQueue.pop_back();
-        }
+        Flush();
 
         if (exitFlag) {
             break;

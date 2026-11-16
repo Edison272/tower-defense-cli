@@ -19,7 +19,7 @@
 class Pooler {
    public:
     Pooler(size_t minimumPoolSize);
-    size_t PoolSize();
+    size_t PoolSize() const;
 
     // clear the enemy pool
     void Clear();
@@ -40,10 +40,11 @@ class Pooler {
     std::deque<Enemy> enemy_storage;
     size_t minimumPoolSize;
 
+    // Creates an enemy, adds it to active_enemy. draws from enemy_pool if possible
     Enemy* CreateEnemy();
     
-    // clears the pointers for active_enemies and enemy_pool
-    void ClearPointers();
+    // Resets pool back to base state. clears previous pool and reinitializes with new one 
+    void Reset();
 };
 
 #endif  // POOLER_H
